@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h2>Todo</h2>
+
+        <button class="btn themes"></button>
+      </header>
+
+      <section>
+        <form class="whiteBox todo" action="" method="POST">
+          <input id="check" type="checkbox" disabled />
+          <label for="check"></label>
+          <input type="text" id="newTodo" placeholder="Create a new todo..." />
+        </form>
+
+        <div class="todoList boxShadow">
+          <ul class="whiteBox" id="todos"></ul>
+
+          <div class="whiteBox todoLength">
+            <p><span>0</span> items left</p>
+            <button class="btn clearCompleted">Clear Completed</button>
+          </div>
+        </div>
+
+        <div class="whiteBox sort boxShadow">
+          <button class="btn all">All</button>
+          <button class="btn active">Active</button>
+          <button class="btn completed">Completed</button>
+        </div>
+
+        <p>Drag and drop to reorder list</p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+  <footer>
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by Lisa Meister.
+  </footer>
+</html>
