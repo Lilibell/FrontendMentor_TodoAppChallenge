@@ -24,16 +24,17 @@
   <body>
     <main>
       <header>
-        <h2>Todo</h2>
+        <h1>Todo</h1>
 
-        <button class="btn themes"></button>
+        <button class="btn themes" aria-label="Switch Theme"></button>
       </header>
 
       <section>
-        <form class="whiteBox todo" action="" method="POST">
+        <form class="whiteBox todo" action="/" method="POST">
           <input id="check" type="checkbox" disabled />
           <label for="check"></label>
           <input type="text" id="newTodo" placeholder="Create a new todo..." />
+          <label for="newTodo" aria-label="Add Todo"></label>
         </form>
 
         <div class="todoList boxShadow">
